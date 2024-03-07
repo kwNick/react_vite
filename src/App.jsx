@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <div className="flex flex-col items-center justify-center">
-        <Head />
+        {/* <Head /> */}
         <div className="flex flex-col items-center">
           <h1>Lets use routing</h1>
           <div className="flex gap-x-5">
@@ -14,7 +14,7 @@ function App() {
             <Link to={"/projects"}>Projects</Link>
           </div>
         </div>
-        <Foot/>
+        {/* <Foot/> */}
       </div>
     </>
   )
