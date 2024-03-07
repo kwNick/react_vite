@@ -1,8 +1,18 @@
+import Head from "./components/Head"
+
 function App() {
   return (
     <>
-      <div>
-        <h1 className='text-xl text-red-500'>Simple Application!</h1>
+      <div className="flex flex-col items-center justify-center">
+        <Head />
+        <div className="flex flex-col items-center">
+          <h1>Lets use routing</h1>
+          <div className="flex gap-x-5">
+            <button>About Me</button>
+            <button>Contact</button>
+            <button>Projects</button>
+          </div>
+        </div>
       </div>
     </>
   )
