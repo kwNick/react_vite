@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom"
 import Head from "./components/Head"
-
+import Foot from "./components/Foot"
 function App() {
   return (
     <>
@@ -8,11 +9,12 @@ function App() {
         <div className="flex flex-col items-center">
           <h1>Lets use routing</h1>
           <div className="flex gap-x-5">
-            <button>About Me</button>
-            <button>Contact</button>
-            <button>Projects</button>
+            <Link to={"/about"}>About Me</Link>
+            <Link to={"/contact"}>Contact</Link>
+            <Link to={"/projects"}>Projects</Link>
           </div>
         </div>
+        <Foot/>
       </div>
     </>
   )
