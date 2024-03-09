@@ -11,7 +11,7 @@ import About from './components/About.jsx'
 
 const Layout = () =>{
   return (
-    <div>
+    <div className='flex flex-col items-center gap-y-8'>
       <Head />
       <Outlet />
       <Foot/>
