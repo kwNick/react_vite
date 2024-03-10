@@ -11,10 +11,12 @@ import About from './components/About.jsx'
 
 const Layout = () =>{
   return (
-    <div className='flex flex-col items-center gap-y-8'>
-      <Head />
-      <Outlet />
-      <Foot/>
+    <div className='min-h-screen w-full bg-fuchsia-100'>
+      <div className='flex flex-col items-center gap-y-8'>
+        <Head />
+        <Outlet />
+        <Foot/>
+      </div>
     </div>
   );
 };
