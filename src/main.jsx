@@ -4,18 +4,18 @@ import App from './App.jsx'
 import './index.css'
 import Head from './components/Head.jsx'
 import Foot from './components/Foot.jsx'
-import {Outlet, RouterProvider, createBrowserRouter} from 'react-router-dom'
+import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Projects from './components/Projects.jsx'
 import Contact from './components/Contact.jsx'
 import About from './components/About.jsx'
 
-const Layout = () =>{
+const Layout = () => {
   return (
     <div className='min-h-screen w-full bg-fuchsia-100'>
-      <div className='flex flex-col items-center gap-y-8'>
+      <div className='pt-10 flex flex-col items-center gap-y-8'>
         <Head />
         <Outlet />
-        <Foot/>
+        <Foot />
       </div>
     </div>
   );
@@ -23,29 +23,28 @@ const Layout = () =>{
 
 const router = createBrowserRouter([{
   path: '/',
-  element: <Layout/>,
+  element: <Layout />,
   children: [
     {
       path: '/',
-      element: <App/>,
+      element: <App />,
     },
     {
       path: '/about',
-      element: <About/>,
+      element: <About />,
     },
     {
       path: '/contact',
-      element: <Contact/>,
+      element: <Contact />,
     },
     {
       path: '/projects',
-      element: <Projects/>,
+      element: <Projects />,
     },
   ]
-
 
 }]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router}/>
+  <RouterProvider router={router} />
 )
